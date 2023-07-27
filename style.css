@@ -1,0 +1,94 @@
+body {
+  background-color: #37deff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #000104;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1),
+              3px 3px 6px rgba(169, 61, 61, 0.1),
+              4px 4px 8px rgba(174, 44, 44, 0.1); 
+}
+
+.content {
+  max-width: 475px;
+  max-block-size: 2000px;
+  max-height: fit-content;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e7fbfc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border: 2px solid #080a2f;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 99%;
+  padding: 12px;
+  margin-bottom: 10px;
+  margin-top: 11px;
+  align-self: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:hover {
+  border-color: #1e2dff;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type="submit"],
+button#copy,
+button[type="button"] {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background:blue;
+  color: #fff;
+  border: 2px solid #f0e2e2;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button#copy .material-symbols-outlined {
+  margin-right: 5px;
+  font-size: 17px;
+}
+
+button[type="submit"]:hover,
+button#copy:hover,
+button[type="button"]:hover {
+  opacity: 0.8;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #555;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.material-symbols-outlined {
+  margin-right: 6px;
+  font-size: 16px;
+}
